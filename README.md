@@ -54,3 +54,9 @@ myToken.approve(address(0x456...), 50 * 10 ** 18); // Approves spender to transf
 
 // Check allowance for a spender
 uint256 allowance = myToken.allowance(msg.sender, address(0x456...)); // Returns 50 tokens
+```
+If you wonder how to get all the functions for your contract? use this code snippet while running test:
+
+```javascript
+console.log("Contract functions: ", Object.keys(token.functions));
+```
